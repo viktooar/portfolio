@@ -1,5 +1,5 @@
 // const colors = ['#f5a147','#51cad8','#112b39'];
-const colors = ['#f5a147','#0088d8','#4d918b'];
+const colors = ['#f5a147','#0088d8','#e7e8eb'];
 const numLines = 3;
 var currCount = numLines;
 const texts = document.querySelectorAll("#textClip text");

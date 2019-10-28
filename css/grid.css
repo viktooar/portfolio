@@ -1,0 +1,16 @@
+.containter {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; }
+
+section {
+  position: relative; }
+
+/*# sourceMappingURL=grid.css.map */

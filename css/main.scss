@@ -1,0 +1,123 @@
+
+@import "reset.css";
+@import "grid.css";
+@import "setting.css";
+@import "components.css";
+
+$color-orange: #cc3f00;
+
+
+header svg {
+  width: 100%;
+}
+header .filled-heading {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 5em;
+  line-height: 0.9;
+}
+
+header #background path {
+  animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+header #textClip text {
+  display: none;
+}
+header #textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
+  display: inline;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0) rotate(33deg); }
+  35%, 65% { transform: scale(1) rotate(0deg); }
+}
+
+
+$h_header: 100px;
+
+
+
+
+.top-line {
+  position: absolute;
+  height: $h_header;
+  width: 100%;
+
+  background-color: rgba(0,0,0,0.70);
+
+
+  .row {
+    align-items: center;
+
+  }
+
+  .top-line__logo {
+    font-family: 'Amatic SC', cursive;
+    color: #fff;
+    font-size: 50px;
+  }
+
+  .top-line__nav {
+    ul {
+      display: flex;
+    }
+      li {
+        padding-right: 15px;
+      }
+        a {
+          font-family: 'Amatic SC', cursive;
+          font-size: 30px;
+          color: #fff;
+          letter-spacing: 2px;
+        }
+
+          a:hover {
+            color: $color-orange;
+          }
+
+  }
+}
+
+.top-line__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 210px;
+  height: 50px;
+  font-size: 20px;
+
+  background-color: $color-orange;
+  color: #fff;
+}
+
+
+.header {
+  //height: calc(100vh - #{$h_header});
+  height: 100vh;
+  background-image: url(../img/bg_haader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .row {
+    align-items: center;
+    //flex-direction: column;
+    //justify-content: center;
+  }
+
+  .filled-heading {
+    font-family: 'Amatic SC', cursive !important;
+    font-weight: bold;
+  }
+
+  .mouse {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+  }
+
+}
+
